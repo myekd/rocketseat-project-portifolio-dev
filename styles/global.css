@@ -7,7 +7,7 @@
 :root {
   /* Fonts */
   --font-title-lg: 700 56px/120% "Asap", sans-serif;
-  --font-title-mg: 700 24px/120% "Asap", sans-serif;
+  --font-title-md: 700 24px/120% "Asap", sans-serif;
   --font-title-sm: 700 16px/120% "Asap", sans-serif;
   --font-subtitle: 400 20px/120% "Inconsolata", sans-serif;
   --font-text-md: 400 16px/140% "Maven Pro", sans-serif;
