@@ -68,7 +68,6 @@ h2 {
 }
 
 section:first-of-type .card:hover {
-  /* background-color: var(--gray-300); */
   outline: 3px solid var(--gray-200);
 }
 
