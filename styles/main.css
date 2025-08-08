@@ -1,59 +1,98 @@
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+}
 
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+#highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
   background-color: var(--gray-500);
+  height: 817px;
+}
 
-  max-height: 1917px;
+span {
+  display: block;
+  font: var(--font-subtitle);
+  text-align: center;
+}
 
-  h2,
-  span {
-    display: block;
-    text-align: center;
-    margin-bottom: 56px;
-  }
-
-  span {
-    font: var(--font-subtitle);
-    margin-bottom: 8px;
-  }
-
-  h2 {
-    font: var(--font-title-md);
-    color: var(--gray-100);
-  }
+h2 {
+  font: var(--font-title-md);
+  color: var(--gray-100);
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-
   max-width: 1040px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 12px 12px 0;
   background-color: var(--gray-400);
-  height: 280px;
-  width: 330px;
-  border-radius: 14px;
-  img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  h3 {
-    font: var(--font-title-sm);
-    color: var(--gray-100);
-  }
+  border-radius: 10px;
+  height: auto;
+}
 
-  p {
-    margin: 8px 0;
-    font: var(--font-text-sm);
-    color: var(--gray-200);
-  }
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font: var(--font-title-sm);
+  color: var(--gray-100);
+}
+
+.card p {
+  font: var(--font-text-sm);
+  color: var(--gray-200);
+}
+
+section:first-of-type .card:hover {
+  background-color: var(--gray-300);
+  outline: 3px solid var(--gray-200);
 }
 
 figcaption {
-  margin: 20px 12px 17px;
+  margin: 0;
+  padding: 20px 12px 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  max-height: 480px;
+  padding: 88px 120px;
+
+  background-color: var(--gray-600);
+}
+
+#services .card {
+  background-color: var(--gray-600);
+  outline: 3px solid var(--gray-400);
+  padding: 20px;
+}
+
+#services .card img {
+  width: 48px;
+  height: 48px;
 }
